@@ -1,0 +1,3 @@
+Install extension
+
+c:\Windows\Microsoft.NET\Framework64\v4.0.30319\RegAsm.exe /register /codebase C:\Users\RUSZ\src\ShellBoost-My-Samples\SharpShell.FirstStep\bin\Debug\SharpShell.FirstStep.dll
