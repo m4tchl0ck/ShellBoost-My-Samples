@@ -1,4 +1,6 @@
-﻿using ShellBoost.Core;
+using ShellBoost.Core;
+using ShellBoost.Core.WindowsShell;
+using System.Collections.Generic;
 
 namespace ShellBoost.FirstStep
 {
@@ -8,6 +10,13 @@ namespace ShellBoost.FirstStep
         public MyRootFolder(ShellItemIdList idList)
             : base(idList)
         {
+        }
+
+        public override IEnumerable<ShellItem> EnumItems(SHCONTF options)
+        {
+            // note by default, ShellBoost uses the key/ID value as the display name if it’s not explicitly defined
+            yield return new ShellFolder(this, new StringKeyShellItemId("My First Folder"));
+            yield return new ShellItem(this, new StringKeyShellItemId("My First Item"));
         }
     }
 }
