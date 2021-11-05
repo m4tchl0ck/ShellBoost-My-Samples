@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31321.278
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellBoost.FirstStep", "ShellBoost.FirstStep\ShellBoost.FirstStep.csproj", "{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShellBoost.FirstStep", "ShellBoost.FirstStep\ShellBoost.FirstStep.csproj", "{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharpShell.FirstStep", "SharpShell.FirstStep\SharpShell.FirstStep.csproj", "{D0781762-D558-4550-81EF-A509ABA6566B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D0781762-D558-4550-81EF-A509ABA6566B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D0781762-D558-4550-81EF-A509ABA6566B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D0781762-D558-4550-81EF-A509ABA6566B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D0781762-D558-4550-81EF-A509ABA6566B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
