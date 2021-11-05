@@ -1,4 +1,5 @@
-﻿using ShellBoost.Core;
+using ShellBoost.Core;
+using System;
 
 namespace ShellBoost.FirstStep
 {
@@ -9,6 +10,8 @@ namespace ShellBoost.FirstStep
         // only the Shell knows our root folder PIDL
         protected override ShellFolder GetFolderAsRoot(ShellItemIdList idl)
         {
+            Console.WriteLine($"Root Folder Id {idl.DebugString}");
+
             if (_root == null)
             {
                 _root = new MyRootFolder(idl);
