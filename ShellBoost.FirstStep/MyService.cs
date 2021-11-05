@@ -8,8 +8,14 @@ namespace ShellBoost.FirstStep
 {
     public class MyService : IHostedService
     {
-        private readonly ShellFolderServer _shellFolderServer = new MyShellFolderServer();
-        private readonly ShellFolderConfiguration _shellFolderConfiguration = new ShellFolderConfiguration();
+        private readonly ShellFolderServer _shellFolderServer;
+        private readonly ShellFolderConfiguration _shellFolderConfiguration;
+
+        public MyService()
+        {
+            _shellFolderServer = new MyShellFolderServer();
+            _shellFolderConfiguration = new ShellFolderConfiguration();
+        }
 
         public Task StartAsync(CancellationToken cancellationToken)
         {
