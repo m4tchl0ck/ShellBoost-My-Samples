@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ShellBoost.FirstStep", "ShellBoost.FirstStep\ShellBoost.FirstStep.csproj", "{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{683453E2-4AFF-4917-B5B3-2E2DC559CA4A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {28E868F8-1154-4E72-8812-FDCE38451FA7}
+	EndGlobalSection
+EndGlobal
