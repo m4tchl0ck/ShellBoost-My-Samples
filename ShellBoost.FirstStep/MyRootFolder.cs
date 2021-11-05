@@ -17,7 +17,7 @@ namespace ShellBoost.FirstStep
         {
             // note by default, ShellBoost uses the key/ID value as the display name if it’s not explicitly defined
             yield return new ShellFolder(this, new StringKeyShellItemId("My First Folder"));
-            yield return new ShellItem(this, new StringKeyShellItemId("My First Item"));
+            yield return new ShellItem(this, new StringKeyShellItemId("My First Item.txt"));
             yield return new OnDemandFolder(this);
 
             foreach (var shellItem in base.EnumItems(options))
