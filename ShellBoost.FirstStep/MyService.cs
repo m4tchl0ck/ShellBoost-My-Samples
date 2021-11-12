@@ -21,10 +21,14 @@ namespace ShellBoost.FirstStep
         {
             var onDemandRootPath = @"c:\tmp\somePath";
 
+            var displayName = "My Cloud File Provider";
+            ShellRegistration.RegisterCloudStorageProvider(onDemandRootPath, displayName, Guid.Parse("0495e8fd-db76-4dae-a7fa-69f9135c6d88"));
+
             // Register the File On-Demand root, use an end-user friendly display name.
             // Note his must not be ran all the time, just once, for example at install time
             var reg = new OnDemandLocalFileSystemRegistration();
-            reg.ProviderName = "My Cloud File Provider";
+            reg.ProviderName = displayName;
+            reg.ProviderDisplayName = reg.ProviderName;
 
             OnDemandLocalFileSystem.EnsureRegistered(onDemandRootPath, reg);
 
@@ -47,6 +51,7 @@ namespace ShellBoost.FirstStep
             _mps.Stop();
             _mps.Dispose();
 
+            ShellRegistration.UnregisterCloudStorageProvider(Guid.Parse("0495e8fd-db76-4dae-a7fa-69f9135c6d88"));
             Console.WriteLine("Stoped.");
 
             return Task.CompletedTask;
